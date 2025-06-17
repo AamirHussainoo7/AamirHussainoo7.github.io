@@ -2,40 +2,80 @@
 <html>
 <head>
     <title>Navbar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #333;
+            color: white;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 16px;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 30px;
+            gap: 40px;
+        }
+
+        .info-box {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 500px;
+        }
+
+        .info-box h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .info-box p {
+            color: #555;
+        }
+
+        .profile-img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
 <body>
-    <div style="
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px 30px;
-        background-color: #333;
-        color: white;
-        font-family: Arial, sans-serif;
-    ">
+    <div class="navbar">
         <div style="font-size: 24px; font-weight: bold;">
             Aamir Hussain
         </div>
         <div>
-            <a href="#home" style="
-                color: white;
-                text-decoration: none;
-                margin-left: 20px;
-                font-size: 16px;
-            ">Home</a>
-            <a href="#skills" style="
-                color: white;
-                text-decoration: none;
-                margin-left: 20px;
-                font-size: 16px;
-            ">Skills</a>
-            <a href="#project" style="
-                color: white;
-                text-decoration: none;
-                margin-left: 20px;
-                font-size: 16px;
-            ">Project</a>
+            <a href="#home">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#project">Project</a>
         </div>
+    </div>
+
+    <div class="main-content">
+        <div class="info-box">
+            <h2>MERN Stack Developer</h2>
+            <p>Hello! I'm Aamir Hussain, a passionate MERN stack developer with experience in building dynamic and responsive web applications using MongoDB, Express.js, React, and Node.js. I enjoy solving problems and bringing ideas to life with clean, efficient code.</p>
+        </div>
+        <img src="pngtree-children-s-software-programming-image_2230759.jpg" alt="image" class="profile-img">
     </div>
 </body>
 </html>
